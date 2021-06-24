@@ -1,1 +1,2 @@
 *.so
+pybind11_examples/
