@@ -13,7 +13,6 @@ import time
 
 import fenics as fe
 
-
 def integrate(u0, f, t):
     nt = len(t)
     dt = t[1] - t[0]
@@ -52,7 +51,7 @@ integrate( double u0, Eigen::Ref<Eigen::VectorXd> t )
         u[i] = u[i-1] + dt*f(t[i-1]);
     }
     return u;
-}
+};
 
 PYBIND11_MODULE(SIGNATURE, m)
 {
